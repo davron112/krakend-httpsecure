@@ -5,9 +5,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/luraproject/lura/v2/config"
-
-	"github.com/krakendio/krakend-httpsecure/v2"
+	"github.com/davron112/lura/v2/config"
 )
 
 func TestNewSecureMw(t *testing.T) {

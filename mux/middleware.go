@@ -3,11 +3,11 @@ package mux
 import (
 	"net/http"
 
-	"github.com/luraproject/lura/v2/config"
-	"github.com/luraproject/lura/v2/router/mux"
+	"github.com/davron112/lura/v2/config"
+	"github.com/davron112/lura/v2/router/mux"
 	"github.com/unrolled/secure"
 
-	httpsecure "github.com/krakendio/krakend-httpsecure/v2"
+	httpsecure "github.com/davron112/krakend-httpsecure/v2"
 )
 
 // NewSecureMw creates a secured middleware for the mux engine

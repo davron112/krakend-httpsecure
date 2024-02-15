@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/luraproject/lura/v2/config"
+	"github.com/davron112/lura/v2/config"
 )
 
 func ExampleConfigGetter() {
