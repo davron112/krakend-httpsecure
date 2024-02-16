@@ -3,11 +3,10 @@ package gin
 import (
 	"errors"
 
+	httpsecure "github.com/davron112/krakend-httpsecure/v2"
 	"github.com/davron112/lura/v2/config"
 	"github.com/gin-gonic/gin"
 	secure "github.com/unrolled/secure"
-
-	httpsecure "github.com/davron112/krakend-httpsecure/v2"
 )
 
 var ErrNoConfig = errors.New("no config present for the httpsecure module")
@@ -38,6 +37,7 @@ func secureMw(opt secure.Options) gin.HandlerFunc {
 
 	return func(c *gin.Context) {
 		err := secureMiddleware.Process(c.Writer, c.Request)
+
 		if err != nil {
 			c.Abort()
 			return

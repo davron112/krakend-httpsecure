@@ -5,6 +5,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
+	"github.com/davron112/krakend-httpsecure/v2"
 	"github.com/davron112/lura/v2/config"
 	"github.com/gin-gonic/gin"
 )
